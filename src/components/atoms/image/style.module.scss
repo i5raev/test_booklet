@@ -1,0 +1,10 @@
+@import "../../../scss/utils/variables";
+@import "../../../scss/utils/mixins";
+
+.image_wrapper{
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

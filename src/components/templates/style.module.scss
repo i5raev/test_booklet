@@ -1,0 +1,17 @@
+@import "../../scss/utils/variables";
+@import "../../scss/utils/mixins";
+
+.main_template{
+ @include container();
+ position: relative;
+}
+.welcome_image{
+  position: absolute;
+}
+.cards{
+ padding-top: 450px;
+}
+.load_more{
+ text-align: center;
+ margin-top: 60px;
+}
