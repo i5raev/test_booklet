@@ -4,6 +4,7 @@ import styled from './style.module.scss';
 import Button from '../atoms/button/button';
 import Image from '../atoms/image/Image';
 import BgImage from '../../assets/image/bg-image.png';
+import { ICard } from '../../interfaces';
 
 const MainTemplate: FC<IMainTemplate> = ({
                                              cards,
@@ -25,17 +26,8 @@ const MainTemplate: FC<IMainTemplate> = ({
 
 );
 
-interface IMainTemplate {
-    cards: [{
-        id: number,
-        url: string,
-        title: string,
-        logo: string,
-        subtitle: string,
-    }],
+type IMainTemplate = {
+    cards: ICard[],
 }
-
-MainTemplate.defaultProps = {
-};
 
 export default MainTemplate;

@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from './style.module.scss';
 import Card from '../molecules/card-molecules/Card';
 import Button from '../atoms/button/button';
+import { ICard } from '../../interfaces';
 
 const CardsOrganisms: FC<ICardsOrganisms> = ({
                                                  cards,
@@ -16,22 +17,8 @@ const CardsOrganisms: FC<ICardsOrganisms> = ({
                                        </>
     );
 
-interface EnumObj {
-    id: number,
-    url: string,
-    title: string,
-    logo: string,
-    subtitle: string,
-}
-
-interface ICardsOrganisms {
-    cards: [{
-        id: number,
-        url: string,
-        title: string,
-        logo: string,
-        subtitle: string,
-    }],
+type ICardsOrganisms = {
+    cards: ICard[],
     className?: string
 }
 
